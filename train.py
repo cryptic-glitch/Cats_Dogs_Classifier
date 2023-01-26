@@ -177,7 +177,7 @@ if __name__ == "__main__":
         "--bs",
         type=List,
         help="batch size",
-        default=[5],
+        default=[18, 24],
     )
 
     parser.add_argument(
