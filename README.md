@@ -12,7 +12,7 @@ With the given training script, we can train the several models along with sever
 
 ```gherkin=
 # Examplary CLI instructions
-python train.py imdir "path/to/the/imagedir" --lr [0.001, 0.0001] --m ["MobileNetV3Small", "EfficientNetV2B2"] --bs [18, 24] --epoch 5
+python train.py --imdir "path/to/the/imagedir" --lr [0.001, 0.0001] --m ["MobileNetV3Small", "EfficientNetV2B2"] --bs [18, 24] --epoch 5
 ```
 **where**
 ```
