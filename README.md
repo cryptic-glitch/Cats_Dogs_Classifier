@@ -6,6 +6,8 @@ The project uses pretrained Deep Learning neural networks in TF2 for the binary 
 
 
 # Usage
+**training**
+
 With the given training script, we can train the several models along with several learning rates and batch sizes as a pandas dataframe. 
 
 **Batch sizes, Model architectures & learning rates should be a list of int, string and float respectively**
@@ -24,6 +26,13 @@ lr = Learning rate
 m = Model architecture
 bs = Batch size
 epoch = No. of epochs to train
+```
+# Inference
+Model is released here: https://github.com/cryptic-glitch/Cats_Dogs_Classifier/releases/download/ckpt/checkpoint_InceptionV3.zip
+After downloading the model, follow the instructions.
+CLI instructions 
+```gherkin=
+python inference.py path/to/image path/to/model
 ```
 
 # Augmentations
@@ -65,4 +74,5 @@ Along with them, with a batch size of 24, the metrics are -
 # Conclusion and further outlooks
 1) Since the inter class variance is quite high(due to distintice features of the binary classes), shallow models were able to train themselves with high accuracy. 
 2) The model can be further improved with higher batch sizes, high number of epochs along with the inclusion of more robust augmenentations and finally the addition of scheduler. Since, I trained it for just 4 epochs, scheduler was a bit unwanted, however, I would incorporate if I train the model for more epochs. 
+
 
